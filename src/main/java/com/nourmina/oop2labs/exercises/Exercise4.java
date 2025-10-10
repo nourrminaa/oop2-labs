@@ -18,6 +18,7 @@ public class Exercise4 extends Application {
         circle.setRadius(50);
         circle.setStroke(Color.BLACK);
         circle.setFill(Color.WHITE);
+        // NOTE: since the filling is the same as the background, we can simply not set it or set it to null
 
         // create a pane and place the circle inside the pane
         Pane pane = new Pane();
@@ -29,6 +30,11 @@ public class Exercise4 extends Application {
         primaryStage.setTitle("Exercise4");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        // NOTE:
+        // - the Pane class does not center its children by default
+        // - it is the X and Y being 100 and the Pane being 200x200 that centers the circle
+        // - so if we resize the window, the circle will not remain centered
     }
 
     public static void main (String[] args){

@@ -81,14 +81,40 @@ public class Chapter1 {
     /// A Pane can contain any subclass of Node, including Shapes, Controls, and other Panes
     /// Every subclass of Node has no-argument constructor for creating a default node => new Button(), new Label(), new Rectangle(), new Circle(), new FlowPane(), etc.
 
-    // 7. StackPane, FlowPane, HBox, VBox, BorderPane, GridPane
+    // 7. StackPane, Pane, FlowPane, HBox, VBox, BorderPane, GridPane
     /// a. StackPane:
-    //// places all nodes on top of each other in a stack
-    //// puts them all in the center of the pane by default
-    //// respects the node's size, it does not change the size of the components to fit the pane/window -> if the pane is smaller than the node, the node will be clipped
-    //// pane.getChildren -> returns an observable list of nodes that are children of the pane
-    //// pane.getChildren().add(node) -> adds a node to the pane
-    //// pane.getChildren().addAll(node1, node2, ...) -> adds multiple nodes to the pane
+        //// places all nodes on top of each other in a stack
+        //// puts them all in the center of the pane by default
+        //// respects the node's size, it does not change the size of the components to fit the pane/window -> if the pane is smaller than the node, the node will be clipped
+        //// pane.getChildren -> returns an observable list of nodes that are children of the pane
+        //// pane.getChildren().add(node) -> adds a node to the pane
+        //// pane.getChildren().addAll(node1, node2, ...) -> adds multiple nodes to the pane
 
+    /// b. Pane:
+        ////this is the base class, it does not arrange children automatically like the StackPane
 
+    // 8. Javafx Coordinates System
+        /// the upper-left corner is (0,0) (pane or scene)
+            //// NOTE: we set the pane & scene size, not the stage size
+        /// coordinates are in pixels
+
+    // 9. Color Class
+        /// used to create colors
+        /// Color Constructors:
+        //// 1. Color color = Color.rgb(int red, int green, int blue);
+        //// 2. Color color = Color.rgb(int red, int green, int blue, double opacity);
+        ///// NOTE: r, g, b => values between 0 and 255 and opacity => value between 0.0 and 1.0 (0 like transparent, 1 like opaque)
+        /// we can also use predefined colors such as Color.RED, Color.GREEN, Color.BLUE, etc. => Color color = Color.RED;
+        ///or directly in setFill() or setStroke() methods => circle.setFill(Color.RED);
+
+    // 10. Font Class
+    /// used to create fonts
+    /// Font Constructors:
+    //// 1. Font font = new Font(String family, double size);
+    //// 2. Font font = Font.font(String family, FontWeight weight, FontPosture posture, double size);
+    ///// NOTE:
+        ///// - family => font family such as "Arial", "Verdana", "Times New Roman", etc.
+        ///// - weight => FontWeight.NORMAL, FontWeight.BOLD, etc.
+        ///// - posture => FontPosture.REGULAR, FontPosture.ITALIC, etc.
+        ///// - size => font size in points (range: 1 to 100)
 }
