@@ -1,4 +1,4 @@
-package com.nourmina.oop2labs.exercises;
+package com.nourmina.oop2labs.exercises.course_exercises;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

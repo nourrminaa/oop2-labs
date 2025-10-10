@@ -1,0 +1,39 @@
+Exercise 1
+Given: Create a basic JavaFX application that displays a window with a button and simple text fields
+with their name before using a FlowPane layout.
+
+Exercise 2
+Given: Create multiple stages (windows) displaying circles of different sizes and colors to
+understand shapes, fills, opacity, and multiple windows.
+
+Exercise 3
+Given: Display multiple text elements using the Text class with different font styles, colors,
+underlines, and effects to explore text customization:
+- title: "JavaFX Text Customization" in italic, size 24, color blue
+- subtitle: "Learning JavaFX" in bold, size 18, color green, underlined with padding on the left
+- another line of text: "Shapes and Text" in normal style, size 14, color red with strikethrough
+- another line of text: "JavaFX Text" and "end line" on the next line in one text. in bold style, size 23, color purple with a black line on borders
+
+Exercise 4
+Given: Build a form using FlowPane with labels, text fields, and buttons arranged vertically
+to practice layout management and spacing.
+
+Exercise 5
+Given: Create a login form using GridPane with username and password fields, along with
+Login and Clear buttons, to practice grid-based layouts.
+
+Exercise 6
+Given: Build a BorderPane layout with buttons placed in each region (top, bottom, left, right, center)
+to understand how BorderPane organizes components.
+
+Exercise 7
+Given: Use radio buttons with background colors and event listeners to change interface elements,
+exploring event handling and color styling.
+
+Exercise 8
+Given: Design an interface using HBox and VBox layouts, combining them inside a BorderPane to learn
+nesting layouts and reusable layout methods.
+
+Exercise 9
+Given: Implement basic event handling by making a button respond to user actions, understanding
+the connection between event sources and handlers.

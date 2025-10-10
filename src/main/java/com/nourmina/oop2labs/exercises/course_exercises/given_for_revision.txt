@@ -1,0 +1,18 @@
+CHAPTER 1 - INTRODUCTION TO JAVAFX
+    Exercise 1
+    Given: Create a simple JavaFX application that displays a window containing one button using
+    the Scene and Stage classes.
+
+    Exercise 2
+    Given: Develop a multistage JavaFX application that displays two separate windows, each containing
+    a button, to understand how to create and manage multiple stages.
+
+    Exercise 3
+    Given: Place a button inside a StackPane and display it within a scene to practice using layout
+    panes for component positioning.
+
+    Exercise 4
+    Given: Draw a circle inside a Pane and display it on the stage to understand coordinate positioning,
+    centering, and the difference between stroke and fill colors.
+
+CHAPTER 2 - JAVAFX SHAPES AND TEXT
