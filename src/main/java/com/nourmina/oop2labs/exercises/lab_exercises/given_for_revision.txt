@@ -16,7 +16,7 @@ underlines, and effects to explore text customization:
 
 Exercise 4
 Given: Build a form using FlowPane with labels, text fields, and buttons arranged vertically
-to practice layout management and spacing.
+to practice layout management and spacing (first name, last name, email, submit, clear).
 
 Exercise 5
 Given: Create a login form using GridPane with username and password fields, along with

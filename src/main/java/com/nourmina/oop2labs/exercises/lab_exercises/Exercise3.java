@@ -38,7 +38,7 @@ public class Exercise3 extends Application {
         FlowPane flowPane3 = new FlowPane();
         flowPane3.getChildren().add(txt1);
 
-        Text txt2 = new Text(20, 20, "JavaFX Text");
+        Text txt2 = new Text(20, 20, "JavaFX Text\nEnd Line");
         txt2.setFont(Font.font("Arial",FontWeight.BOLD ,FontPosture.REGULAR, 23));
         txt2.setFill(Color.PURPLE);
         txt2.setStroke(Color.BLACK);
