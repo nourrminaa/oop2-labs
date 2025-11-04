@@ -81,7 +81,7 @@
 - has a text label that can be set using the constructor or the `setText()` method
 - can have an event handler that is called when the button is clicked
 - can be added to a layout pane using the `getChildren().add()` method
-
+- `b.setPrefSize(double, double)`: to set a fixed size to the button
 ---
 
 ## 5. Layout Panes & UI Controls & Shapes
@@ -132,6 +132,7 @@
 - the components are placed in a row until no more components can fit in that row, then a new row is started automatically.
 - `FlowPane mainPane = new FlowPane(Orientation.VERTICAL);`: now all the components are placed each on a line
 - `FlowPane firstNamePane = new FlowPane(5,7);` : the first one is the Horizontal Gap, the second is the Vertical Gap between the nodes in the same pane
+- we can also set the Vertical Gap or Horizontal using pane.
 ---
 
 ### d. GridPane
@@ -146,6 +147,15 @@
 - `borderPane.setRight(node);` → adds a node to the right region
 - `borderPane.setCenter(node);` → adds a node to the center region
 - to put the pane in the center of the region, we can use `BorderPane.setAlignment(node, Pos.CENTER);`
+
+### f. HBox & VBox
+#### f.1. HBox: Horizontal Box
+- `HBox hBox = new HBox(double hgap);`
+- and then we add the children that will automatically be put in a horizontal line
+#### f.2. VBox: Vertical Box
+- 
+
+---
 
 ## 8. JavaFX Coordinates System
 - the upper-left corner is (0,0) (pane or scene)
@@ -204,7 +214,12 @@ Used to create and style fonts in JavaFX.
 > - `setStrikethrough(true)` → put a line on the text 
 > - `pane.setPadding(new Insets(20, 0, 0, 20));` used to add padding to children (ONLY can be used on panes not UI components directly)
 > - `pane.setAlignment(Pos.CENTER);` used to align children in the pane
-
+> - `pane.setMargin(new Insets(20, 0, 0, 20))`
+> - FOR LOOP ON A LABEL ARRAY TO PUT IN VBOX + SET MARGIN:
+> - for (Label course: courses){ 
+      vbox.setMargin(course, new Insets(20, 0, 0, 20)); 
+      vbox.getChildren().add(course)
+    }
 ---
 ## 11. Styling
 ### CSS Styling
