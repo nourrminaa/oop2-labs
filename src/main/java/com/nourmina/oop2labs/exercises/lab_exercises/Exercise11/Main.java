@@ -11,9 +11,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
-    TextField f1; // here it is global, so we can access it in the handler class
-    Stage myStage;
     @Override
     public void start(Stage primaryStage){
         Label l1 = new Label("enter a title");
