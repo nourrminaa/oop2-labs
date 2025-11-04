@@ -204,3 +204,18 @@ Used to create and style fonts in JavaFX.
 > - `setStrikethrough(true)` → put a line on the text 
 > - `pane.setPadding(new Insets(20, 0, 0, 20));` used to add padding to children (ONLY can be used on panes not UI components directly)
 > - `pane.setAlignment(Pos.CENTER);` used to align children in the pane
+
+---
+## 11. Styling
+### CSS Styling
+- JavaFX supports CSS for styling UI components
+- you can set styles directly in Java code using the `setStyle()` method
+- `pane.setStyle("-fx-background-color: lightblue;");`
+
+### Background Styling
+- You can set a background color or image for a pane using the `Background` class
+- ```java
+  BackgroundFill backgroundFill = new BackgroundFill(Color.LIGHTBLUE, null, null);
+  Background background = new Background(backgroundFill);
+  pane.setBackground(background);
+  ```

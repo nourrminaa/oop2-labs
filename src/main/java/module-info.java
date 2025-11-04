@@ -6,5 +6,8 @@ module com.nourmina.oop2labs {
     opens com.nourmina.oop2labs to javafx.fxml;
     exports com.nourmina.oop2labs.exercises.lab_exercises;
     exports com.nourmina.oop2labs.exercises.course_exercises;
+    exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise10;
+    exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise9;
+
 }
 
