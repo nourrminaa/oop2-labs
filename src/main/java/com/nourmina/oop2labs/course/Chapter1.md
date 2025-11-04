@@ -126,7 +126,7 @@
 ### b. Pane
 - this is the base class; it does not arrange children automatically like the StackPane
 - they will all be placed at the default position (0, 0)
-- if we need to use it we can `pane.setLayoutX()` and `pane.setLayoutY()` to set the coordinates
+- if we need to use it we can `pane.setLayoutX()` and `pane.setLayoutY()` to set the coordinates (BEST TO USE IN THIS CASE.)
 
 ### c. FlowPane
 - the components are placed in a row until no more components can fit in that row, then a new row is started automatically.
