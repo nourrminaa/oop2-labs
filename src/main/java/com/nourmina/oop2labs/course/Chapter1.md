@@ -112,7 +112,7 @@
 
 ---
 
-## 7. StackPane, Pane, FlowPane, HBox, VBox, BorderPane, GridPane
+## 7. StackPane, Pane, FlowPane, GridPane, HBox, VBox, BorderPane
 
 ### a. StackPane
 - places all nodes on top of each other in a stack
@@ -133,6 +133,11 @@
 - `FlowPane mainPane = new FlowPane(Orientation.VERTICAL);`: now all the components are placed each on a line
 - `FlowPane firstNamePane = new FlowPane(5,7);` : the first one is the Horizontal Gap, the second is the Vertical Gap between the nodes in the same pane
 ---
+
+### d. GridPane
+- places the nodes in cells of 2D grid
+- `gridPane.add(node, colIndex, rowIndex);` → adds a node to the specified column and row
+
 
 ## 8. JavaFX Coordinates System
 - the upper-left corner is (0,0) (pane or scene)

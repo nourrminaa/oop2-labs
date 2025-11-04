@@ -33,7 +33,7 @@ public class Exercise4 extends Application {
 
         // NOTE:
         // - the Pane class does not center its children by default
-        // - it is the X and Y being 100 and the Pane being 200x200 that centers the circle
+        // - it is the X and Y being 100 and the Scene being 200x200 that centers the circle
         // - so if we resize the window, the circle will not remain centered
     }
 
