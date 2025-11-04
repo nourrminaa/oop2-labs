@@ -121,10 +121,17 @@
 - `pane.getChildren` → returns an observable list of nodes that are children of the pane
 - `pane.getChildren().add(node)` → adds a node to the pane
 - `pane.getChildren().addAll(node1, node2, ...)` → adds multiple nodes to the pane
+- if we try to put `pane.setLayoutX()` and `pane.setLayoutY()` here it will be cancelled
 
 ### b. Pane
 - this is the base class; it does not arrange children automatically like the StackPane
+- they will all be placed at the default position (0, 0)
+- if we need to use it we can `pane.setLayoutX()` and `pane.setLayoutY()` to set the coordinates
 
+### c. FlowPane
+- the components are placed in a row until no more components can fit in that row, then a new row is started automatically.
+- `FlowPane mainPane = new FlowPane(Orientation.VERTICAL);`: now all the components are placed each on a line
+- `FlowPane firstNamePane = new FlowPane(5,7);` : the first one is the Horizontal Gap, the second is the Vertical Gap between the nodes in the same pane
 ---
 
 ## 8. JavaFX Coordinates System
@@ -180,4 +187,7 @@ Used to create and style fonts in JavaFX.
 > - `weight` → `FontWeight.NORMAL`, `FontWeight.BOLD`, etc.
 > - `posture` → `FontPosture.REGULAR`, `FontPosture.ITALIC`, etc.
 > - `size` → font size in points (**1 to 100**)
+> - `subtitle.setUnderline(true)` → to put a line under a text
+> - `setStrikethrough(true)` → put a line on the text 
+> - `pane.setPadding(new Insets(20, 0, 0, 20));` used to add padding to children (ONLY can be used on panes not UI components directly)
 
