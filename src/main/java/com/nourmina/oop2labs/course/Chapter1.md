@@ -112,7 +112,7 @@
 
 ---
 
-## 7. StackPane, Pane, FlowPane, GridPane, HBox, VBox, BorderPane
+## 7. StackPane, Pane, FlowPane, GridPane, BorderPane, HBox, VBox
 
 ### a. StackPane
 - places all nodes on top of each other in a stack
@@ -138,6 +138,14 @@
 - places the nodes in cells of 2D grid
 - `gridPane.add(node, colIndex, rowIndex);` → adds a node to the specified column and row
 
+### e. BorderPane
+- divides the pane into 5 regions: top, bottom, left, right, and center
+- `borderPane.setTop(node);` → adds a node to the top region
+- `borderPane.setBottom(node);` → adds a node to the bottom region
+- `borderPane.setLeft(node);` → adds a node to the left region
+- `borderPane.setRight(node);` → adds a node to the right region
+- `borderPane.setCenter(node);` → adds a node to the center region
+- to put the pane in the center of the region, we can use `BorderPane.setAlignment(node, Pos.CENTER);`
 
 ## 8. JavaFX Coordinates System
 - the upper-left corner is (0,0) (pane or scene)
@@ -195,4 +203,4 @@ Used to create and style fonts in JavaFX.
 > - `subtitle.setUnderline(true)` → to put a line under a text
 > - `setStrikethrough(true)` → put a line on the text 
 > - `pane.setPadding(new Insets(20, 0, 0, 20));` used to add padding to children (ONLY can be used on panes not UI components directly)
-
+> - `pane.setAlignment(Pos.CENTER);` used to align children in the pane
