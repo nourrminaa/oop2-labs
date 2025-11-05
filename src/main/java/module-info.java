@@ -13,6 +13,7 @@ module com.nourmina.oop2labs {
     exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise12;
     exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise13;
     exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise14;
+    exports com.nourmina.oop2labs.exercises.lab_exercises.Exercise15;
 //    exports com.nourmina.oop2labs.exercises.lab_exercises.MySQLConfig;
 
 }
