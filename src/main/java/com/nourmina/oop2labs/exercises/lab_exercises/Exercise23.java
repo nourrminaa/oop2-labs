@@ -32,6 +32,10 @@ public class Exercise23 extends Thread{
                break;
            }
        }
+       // Other method:
+        //        while (th1.isAlive() || th2.isAlive() || th3.isAlive()) {}
+        //        long after_time = System.currentTimeMillis();
+
        // NOTE: To measure each thread's execution time separately, record the start and end times inside each thread's run() method, then use join() in main to wait for each thread to finish before calculating the total.
     }
 }
